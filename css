@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: orange;
+    font-family: 'Creepster', cursive;
+    text-align: center;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    background-color: darkorange;
+    color: black;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.box.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
